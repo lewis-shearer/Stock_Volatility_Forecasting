@@ -53,4 +53,3 @@ The notebook needs an internet connection because `yfinance` downloads the price
 
 Each model is trained once on 2010 to 2019 and never refitted, so the test period is forecast with parameters that are several years old. The targets are overlapping 21-day windows, so neighbouring test days are strongly correlated and the 982 test points are not independent. The LSTM is not fully deterministic on CPU, so its numbers move slightly between runs. The VIX is calculated from S&P 500 index options, so it is a reference for SPY rather than an exact match.
 
-This was written by AI for learning practice.
